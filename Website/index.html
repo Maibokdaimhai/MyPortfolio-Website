@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Portfolio</title>
+    <link rel="stylesheet" href="Landing_Decoration.css">
+</head>
+<body>
+    <div class="landing-container">
+        <img src="./images/LandPic.png" alt="Sudlhor" class="sudlhor-image">
+        <h1 class="landing-title">Welcome to My Portfolio!!</h1>
+        <h1 class="My-title">Thanawat Suntarawattana</h1>
+        <p>Pink A | 67070501022</p>
+        <button class="landing-button" onclick="fadeOutAndRedirect()">Visit My Portfolio</button>
+    </div>
+
+    <script>
+        function fadeOutAndRedirect() {
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = 'portfolio.html?transition=fade';
+            }, 700);
+        }
+    </script>
+</body>
+</html>

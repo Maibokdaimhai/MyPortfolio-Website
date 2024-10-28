@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling with Transition */
+body, html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab', sans-serif;
+    background: linear-gradient(135deg, #364c94, #1d1d1d);
+    color: #ffffff;
+    transition: opacity 0.7s ease;
+}
+
+/* Fade-Out Effect */
+.fade-out {
+    opacity: 0;
+}
+
+.sudlhor-image {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(163, 163, 163, 0.3);
+}
+
+
+/* Container Styling */
+.landing-container {
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+}
+
+.landing-container h1, .landing-container p, .landing-container button {
+    margin-left: 20px;
+}
+
+.landing-title {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.landing-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #cfcfcf;
+}
+
+.landing-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background: #2a3c75;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.landing-button:hover {
+    background: #ffffff;
+    color: #2a3c75;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.landing-container {
+    animation: fadeIn 1s ease-out;
+}
