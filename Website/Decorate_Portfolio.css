@@ -400,3 +400,79 @@ footer {
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        padding-left: 20px;
+    }
+
+    nav ul li {
+        padding-left: 20px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #about, #aboutme, #skills, #projects, #contact {
+        margin: 10px 0;
+    }
+
+    #about {
+        grid-template-columns: 1fr;
+        padding-top: 100px;
+    }
+
+    #about .container {
+        padding-left: 20px;
+        font-size: 18px;
+    }
+
+    #about .sudlhor img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    #aboutme {
+        flex-direction: column;
+    }
+
+    #aboutme .container1 img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    #skills .container, #projects .container {
+        grid-template-columns: 1fr;
+    }
+
+    #skills .container-left, #skills .container-right, #projects .container .project-left, #projects .container .project-right {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    #projects .container img {
+        width: 100%;
+    }
+
+    #contact {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-right {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
