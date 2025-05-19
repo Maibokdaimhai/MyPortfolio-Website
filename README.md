@@ -14,10 +14,4 @@ This site represents my background, education, skills, and projects in a simple 
 
 ---
 
-## 📄 License
-
-This project is open-source under the [MIT License](LICENSE).
-
----
-
 > Created by Thanawat Suntarawattana
